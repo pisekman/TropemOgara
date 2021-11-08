@@ -3,5 +3,8 @@ module.exports = {
     siteUrl: "https://www.tropemogara.pl",
     title: "Tropem Ogara ",
   },
-  plugins: [],
+  plugins: [
+    "gatsby-plugin-image",
+    "gatsby-plugin-sharp",
+  ],
 };
