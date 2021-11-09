@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link, graphql } from 'gatsby'
-import Layout from '../components/layout'
+import Layout from '../../components/layout'
+
 const BlogPage = ({ data }) => {
   return (
     <Layout pageTitle="My Blog Posts">
@@ -19,6 +20,7 @@ const BlogPage = ({ data }) => {
     </Layout>
   )
 }
+
 export const query = graphql`
   query {
     allMdx(sort: {fields: frontmatter___date, order: DESC}) {
@@ -33,4 +35,5 @@ export const query = graphql`
     }
   }
 `
+
 export default BlogPage
